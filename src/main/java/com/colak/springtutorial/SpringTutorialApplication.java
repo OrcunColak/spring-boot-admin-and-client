@@ -15,6 +15,16 @@ public class SpringTutorialApplication {
         SpringApplication client = new SpringApplication(DemoClient.class);
         client.setAdditionalProfiles("client");
         client.run(args);
+
+        // new SpringApplicationBuilder()
+        //         .sources(DemoAdminServer.class)
+        //         .profiles("admin")
+        //         .run(args);
+        //
+        // new SpringApplicationBuilder()
+        //         .sources(DemoClient.class)
+        //         .profiles("client")
+        //         .run(args);
     }
 }
 
